@@ -4,51 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Carb Size Guide</title>
+    <title>Carburetor Size Guide</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/09b0626352.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="page-container">
     <nav>
         <h2>KMT CREATIONS</h2>
+        <div class="icons-container">
+            <a><i class="fa-brands fa-linkedin"></i></a><a><i class="fa-brands fa-github"></i></a><a><i class="fa-brands fa-instagram"></i></a>
+        </div>
     </nav>
     <main>
         <section class="body-content">
             <div class="main-column">
-                <h1>Carbertour Size Guide</h1>
+                <h1>Carburetor Size Guide</h1>
                 <p>*This is a very basic calculator, it's more for giving you an idea of what is needed</p>
-                <form>
+                <div class="form">
                     <fieldset>
-                        <label>Engine Displacement:<input type="number"></label>
-                        <label>Maximum Engine RPM:<input type="number"></label>
-                        <input type="submit">
+                        <label>Engine Displacement:<input type="number" id="displacement"></label>
+                        <label>Maximum Engine RPM:<input type="number" id="maxRpm"></label>
+                        <input type="submit" class="button" id="submit" return="false">
                     </fieldset>
-                </form>
-                <div>
-                    <h1>Carb Size Suggested: </h1> 
+                </div>
+                <div class="result-box">
+                    <h1>Carb Size Suggested: </h1><h1 class="result" id="result"></h1>
                 </div>
             </div>
             <div class="side-column">
                 <h3>Check Out My Other Stuff!</h3>
                 <div class="side-grid">
-                <div class="card">
+                <a class="card">
                     <img class="card-img" src="" alt="Coming Soon!">
                     <p>Tic-Tac-Toe</p>
-                </div>
-                <div class="card">
+                </a>
+                <a class="card">
                     <img class="card-img" src="" alt="Coming Soon!">
                     <p>Odin Project Items</p>
-                </div>
-                <div class="card">
+                </a>
+                <a class="card">
                     <img class="card-img" src="" alt="Coming Soon!">
                     <p></p>
-                </div>
+                </a>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        
+        <p class="footer-text"></p>
     </footer>
     </div>
 	<script src="index.js"></script>

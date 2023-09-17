@@ -1,6 +1,8 @@
 * {
     margin:0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
     overflow-x: hidden;
 }
 nav {
@@ -11,9 +13,21 @@ nav {
     min-height:8vh;
     font-size: 1.5rem;
     letter-spacing: .5rem;
+    width:100%;
+    flex-direction: column;
+    gap:.25em;
+    padding:.5em 0em;
+}
+.icons-container {
+    display: flex;
+    gap:1em;
+}
+.fa-brands:hover {
+    opacity:70%;
+    cursor:pointer;
 }
 main {
-    padding:4em 7em;
+    padding:2em 7em;
 }
 h1 {
 font-size:3rem;
@@ -28,17 +42,16 @@ p {
 }
 .main-column {
    flex-basis: 70%;
-   border:2px solid red;
+   
 }
 .side-column {
-    border:2px solid red;
     display:flex;
     flex-direction: column;
     align-items: center;
     flex-basis: 30%;
+    margin-bottom:2em;
 }
 .card {
-    border:2px solid black;
     box-shadow: 5px 1px 5px gray;
     display: flex;
     flex-direction: column;
@@ -76,7 +89,7 @@ footer {
     position: relative;
     min-height: 100vh;
 }
-form {
+.form {
     padding:1em;
     margin:1em;
     display:flex;
@@ -87,15 +100,42 @@ label {
     display: flex;
     flex-direction: column;
     gap:.25em;
-    border:2px solid red;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 input {
     font-size:1.25em;
 }
 fieldset {
     display: flex;
-    gap:2em;
+    border:none;
+    align-items:flex-end;
+    gap:2em
+}
+.result-box {
+    display: flex;
+    gap:1em;
+}
+.result {
+    color:red;
+}
+.button {
+    background-color: lightblue;
+    width:100px;
+    text-align: center;
+    font-size:1.25em;
+    box-shadow: 5px 1px 5px gray;
+    border:0;
+    min-height:2em;
+}
+.button:hover {
+    opacity:70%;
+    cursor:pointer;
+}
+@media (max-width:1400px) {
+    fieldset {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media (max-width:900px) {
     .body-content {
@@ -108,9 +148,40 @@ fieldset {
     fieldset {
         flex-direction: column;
     }
+    .result-box {
+        flex-direction: column;
+        gap:0em;
+        text-align: center;
+    }
+    .side-column {
+        margin-bottom:2em;
+    }
+    
 }
 @media (max-width:600px) {
    main {
     padding:1em 1em;
    }
+   .result-box {
+    flex-direction: column;
+
+    gap:0em;
+   }
+   .side-column {
+    margin-bottom:3em;
+   }
 }
+@media (max-width:400px) {
+    h1 {
+        font-size:3em;
+    }
+    h2 {
+        font-size:1em;
+    }
+    input {
+        font-size:1em;
+    }
+    label {
+        font-size:1em;
+    }
+ }
