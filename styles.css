@@ -157,7 +157,7 @@ fieldset {
 @media (max-width:900px) {
     .body-content {
         flex-direction: column;
-        gap:5rem
+        gap:2rem;
     }
     main {
         padding: 4rem 5rem;
@@ -169,6 +169,9 @@ fieldset {
         flex-direction: column;
         gap:0em;
         text-align: center;
+        padding-bottom:0;
+        margin-bottom:0;
+        
     }
     h1, p{
         text-align: center;
@@ -176,6 +179,7 @@ fieldset {
     .side-column {
         padding-bottom:5rem;
         margin-bottom:2rem;
+        gap:.5em;
     }
 }
 @media (max-width:600px) {
@@ -190,9 +194,12 @@ fieldset {
 }
 @media (max-width:400px) {
     h1 {
-        font-size:3em;
+        font-size:2em;
     }
     h2 {
+        font-size:1em;
+    }
+    p {
         font-size:1em;
     }
     input {
