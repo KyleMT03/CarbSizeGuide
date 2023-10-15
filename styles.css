@@ -35,7 +35,7 @@ a {
     cursor:pointer;
 }
 main {
-    padding:2em 7em;
+    padding:2em 3em;
 }
 h1 {
 font-size:3rem;
@@ -46,7 +46,9 @@ p {
 }
 .body-content {
     display: flex;
-    gap:5rem
+    gap:5rem;
+    align-items: center;
+    padding:1em;
 }
 .main-column {
    flex-basis: 70%;
@@ -57,7 +59,6 @@ p {
     flex-direction: column;
     align-items: center;
     flex-basis: 30%;
-    margin-bottom:2em;
 }
 .card {
     box-shadow: 5px 1px 5px gray;
@@ -79,7 +80,8 @@ p {
 }
 h3 {
     font-size: 1.75rem;
-    padding:.7em;
+    padding-bottom:1.5em;
+    text-align:center;
 }
 .side-grid {
     display: grid;
@@ -92,6 +94,7 @@ footer {
     width:100%;
     position: absolute;
     bottom: 0;
+    margin-top:1em;
 }
 .page-container {
     position: relative;
@@ -121,7 +124,9 @@ fieldset {
 }
 .result-box {
     display: flex;
-    gap:1em;
+    gap:2em;
+    padding-bottom:5rem;
+    align-items: center;
 }
 .result {
     color:red;
@@ -139,6 +144,9 @@ fieldset {
 .button:hover {
     opacity:70%;
     cursor:pointer;
+}
+.side-column {
+    padding-bottom:5em;
 }
 @media (max-width:1400px) {
     fieldset {
@@ -162,10 +170,13 @@ fieldset {
         gap:0em;
         text-align: center;
     }
-    .side-column {
-        margin-bottom:2em;
+    h1, p{
+        text-align: center;
     }
-    
+    .side-column {
+        padding-bottom:5rem;
+        margin-bottom:2rem;
+    }
 }
 @media (max-width:600px) {
    main {
@@ -175,9 +186,6 @@ fieldset {
     flex-direction: column;
 
     gap:0em;
-   }
-   .side-column {
-    margin-bottom:3em;
    }
 }
 @media (max-width:400px) {
